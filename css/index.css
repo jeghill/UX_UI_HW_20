@@ -219,7 +219,6 @@ margin-top: 0;
 .projectButton button:hover {
     font-weight: 500;
     cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(37,40,31,0.2);
 }
 
 footer {
