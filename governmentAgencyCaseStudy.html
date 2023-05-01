@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <nav>
+    <nav>
         <div class="header">
             <div class="logo">
                 <a href="index.html">JH</a>
@@ -42,6 +42,42 @@
             </ul>
         </div>
     </nav>
+    <div class="scrollBar" id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    <section class="pageContentContainer">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <div id="scrollspyHeading1">
+            <h4>First heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum hendrerit commodo. In ullamcorper velit metus, ac mattis nibh vestibulum ut. Praesent placerat pharetra metus, sed sodales ante lacinia nec. Cras varius dictum aliquet. Fusce sagittis consequat gravida. Sed dictum leo sit amet urna faucibus fringilla. Proin lobortis dolor risus, at tincidunt neque bibendum et. Mauris elit erat, vulputate vitae molestie non, tempor vel quam. Suspendisse euismod egestas felis, a scelerisque orci pharetra eget. Aliquam ac sagittis magna. Vivamus ut viverra sapien. Cras a ornare massa, nec consequat enim. Sed sagittis quis nisi et imperdiet. Etiam tincidunt dictum arcu vel tempor. Suspendisse nec commodo elit. Donec ac lorem at augue sodales pretium vestibulum quis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam mi erat, rhoncus quis sem ut, porta lacinia mauris. In hac habitasse platea dictumst. Nulla condimentum ligula quis porttitor vehicula. Sed gravida nibh quis viverra viverra. Duis placerat ante nibh, sed finibus felis pulvinar eu. Nullam odio nibh, imperdiet non sapien nec, gravida fermentum augue. Quisque non leo hendrerit, pulvinar nulla non, vulputate mauris. Etiam bibendum libero elit, at gravida est feugiat quis. Morbi erat mauris, dignissim in nunc sed, finibus blandit felis. Nam eget malesuada tellus. Fusce sed iaculis justo. Ut at orci lacus. Quisque eleifend sit amet erat at tempus. Suspendisse sit amet ligula pharetra, rhoncus lectus sit amet, vulputate erat. Suspendisse a massa rutrum, blandit enim non, faucibus ipsum. Mauris sit amet enim est. Vestibulum feugiat gravida imperdiet. Nulla in sagittis orci. Aenean purus enim, pretium quis enim a, aliquet condimentum quam. Aenean arcu turpis, fringilla nec vehicula quis, eleifend eget metus. Proin sed elit eu leo efficitur mattis. Aenean sed dui eros. Phasellus non iaculis neque. Quisque et tellus et sem efficitur viverra. Duis mollis lorem vel eros fermentum consectetur. Donec interdum cursus neque, at scelerisque orci posuere vel. Nunc gravida, dolor sodales posuere mattis, nunc justo commodo lacus, at accumsan velit elit vel lacus. Ut bibendum congue tortor, non luctus ipsum faucibus quis. Sed eu convallis dolor. Aenean congue justo massa. Proin nisl dolor, accumsan a iaculis et, auctor non ligula. Nunc finibus ac augue sit amet imperdiet. Suspendisse eleifend sem ut libero bibendum commodo a ac arcu. Vivamus condimentum libero suscipit nisi porttitor, blandit dictum leo posuere. Suspendisse eget dolor ante. Nam feugiat velit in sem semper, vitae egestas erat aliquam. Sed consequat porta venenatis. Fusce pellentesque velit turpis, in convallis enim volutpat id. Ut et augue non massa imperdiet ullamcorper. Phasellus sit amet ex consectetur, maximus arcu quis, tincidunt orci.
+            </p>
+        </div>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

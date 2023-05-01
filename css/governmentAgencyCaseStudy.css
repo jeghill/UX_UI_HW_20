@@ -92,6 +92,23 @@ nav {
     cursor: pointer;
 }
 
+.scrollBar {
+    position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background-color: white;
+}
+
+
+
+#scrollspyHeading1 {
+    background-color: aqua;
+}
+
+.pageContentContainer {
+    width: 100%;
+}
 
 @media only screen and (max-width: 800px) {
     .header {
