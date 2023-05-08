@@ -16,9 +16,68 @@ a {
     font-family: 'Domine', 'Georgia', 'serif';
     font-size: 2.25rem;
     font-weight: 700;
+    line-height: 1;
+}
+
+.navbar, .navbar-brand {
+    padding: 0 0 0 0!important; 
+}
+
+.myNavigationContainer {
+    background-color: #BBDDEC;
+}
+
+.navbarContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.0625em;
+}
+
+#processNavigation {
+    margin-top: 0.5em; 
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+
+.processSectionContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #F3B56C;
+    padding: 4em 0 4em 0;
+}
+
+.processSectionContent {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.caseStudyContent p, h2, h4{
+    color:#25281F;
+    font-family: 'Heebo', 'Arial', 'Sans Serif';
+    font-weight: 400;
+}
+
+.caseStudyContent p {
+    font-size: 1rem;
+}
+
+.caseStudyContent h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5em;
+}
+
+.caseStudyContent h4 {
+    font-size: 1.5rem;
 }
 
 
+#content2 {
+    
+}
 
 footer {
     width: 100%;
