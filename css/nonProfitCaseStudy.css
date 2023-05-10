@@ -75,10 +75,15 @@ a.nav-link:hover {
     margin: 0 auto;
 }
 
-
 .imageCaption {
     font-style: italic;
     text-align: center;
+}
+
+.caseStudyContent h1 {
+    font-family: 'Domine', 'Georgia', 'serif';
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .caseStudyContent p {
@@ -109,9 +114,6 @@ a.nav-link:hover {
     padding-top: 1.875rem;
 }
 
-#content2 {
-    
-}
 
 footer {
     width: 100%;
