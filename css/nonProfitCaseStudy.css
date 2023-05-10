@@ -2,6 +2,9 @@ body {
     margin: 0;
     box-sizing: border-box;
     position: relative;
+    font-family:'Heebo', 'Arial', 'Sans Serif';
+    color: #25281F;
+    font-weight: 400;
 }
 
 
@@ -19,6 +22,13 @@ a {
     line-height: 1;
 }
 
+.projectTitle {
+    font-size: 1.5rem;
+    font-family: 'Domine', 'Georgia', 'serif';
+    font-weight: 600;
+    text-align: center;
+}
+
 .navbar, .navbar-brand {
     padding: 0 0 0 0!important; 
 }
@@ -33,32 +43,42 @@ a {
     margin-top: 2.0625em;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #BBDDEC;
+    background-color: #25281F;
+    font-weight: 500;
+}
+
+a.nav-link:hover {
+    font-weight: 500;
+    color: #25281F;
+}
+
 #processNavigation {
     margin-top: 0.5em; 
     margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    font-size: 1.25rem;
     
 }
 
 .processSectionContainer {
     width: 90%;
-    max-width: 800px;
     margin: 0 auto;
-    background-color: #F3B56C;
-    padding: 4em 0 4em 0;
+    padding: 2em 0 2em 0;
 }
 
 .processSectionContent {
-    width: 80%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.caseStudyContent p, h2, h4{
-    color:#25281F;
-    font-family: 'Heebo', 'Arial', 'Sans Serif';
-    font-weight: 400;
+
+.imageCaption {
+    font-style: italic;
+    text-align: center;
 }
 
 .caseStudyContent p {
@@ -68,12 +88,26 @@ a {
 .caseStudyContent h2 {
     font-size: 2.25rem;
     margin-bottom: 0.5em;
+    font-weight: 500;
+    text-align: center;
 }
 
 .caseStudyContent h4 {
     font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 800px;
 }
 
+.takeawayContainer {
+    background-color: #F3B56C;
+}
+
+.takeawayContent {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 1.875rem;
+}
 
 #content2 {
     
