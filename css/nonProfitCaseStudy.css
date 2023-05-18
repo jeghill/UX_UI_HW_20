@@ -136,6 +136,41 @@ a.nav-link:hover {
     padding-top: 1.875rem;
 }
 
+.CaseStudyCTAButtonContainer {
+    display: flex;
+    gap: 4em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .CaseStudyCTAButtonContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+}
+
+.CaseStudyCTAButtonContainer a {
+    text-decoration: none;
+    color: #25281F;
+}
+
+.CaseStudyCTAButtonContainer button {
+    font-family: 'Heebo', 'Arial', 'Sans Serif';
+    font-size: 1.5rem;
+    background-color: #F3B56C;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.5em 1.5em;
+    transition: 02.s;
+}
+
+.CaseStudyCTAButtonContainer button:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
 
 footer {
     width: 100%;
@@ -170,3 +205,4 @@ footer {
 .copyrightTextContainer p {
     margin: 0;
 }
+
