@@ -91,6 +91,7 @@
                 <img src="images/AHR-Case-Study-img/AHRprotoPersona.png" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The proto-persona created
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -117,7 +118,8 @@
             <div class="container-fluid pl-0 pr-0 mt-4">
                 <img src="images/AHR-Case-Study-img/AHRHeuristicEvaluation.png" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
-                    The Heuristic Analysis done on the Animal House Rescue Homepage
+                    The Heuristic Analysis done on the Animal House Rescue Homepage.
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -156,6 +158,7 @@
                 <img src="images/AHR-Case-Study-img/AHRAffinityDiagramProcess.png" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The Affinity Diagram process. Firstly all the points from the user interviews were listed on sticky notes. Then the notes were sorted into similar groups and named.
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -166,6 +169,7 @@
                 <img src="images/AHR-Case-Study-img/AHREmpathyMap.png" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The Empathy map created that highlights what Caroline thinks, says, does, feels and her pains and gains.
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -231,6 +235,7 @@
                 <img src="images/AHR-Case-Study-img/AHRFeaturePrioritisationMatrix.png" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The brainstorming process used. The ideas were written down individually and then placed on the matrix as a group. 
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -241,6 +246,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     Don't know what going to say here yet. But Will add in the text powerpoint images done. 
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -251,6 +257,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The current sitemap, the card sorting process and the new sitemap.
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -261,6 +268,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     The user flow diagrams created for the adoption and donation user journeys.
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
         </div>
@@ -291,6 +299,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     A sample of the mid-fidelity prototypes tested.
+                     <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="takeawayContainer mt-4">
@@ -315,6 +324,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     A sample of the UI Design Guide showing xxxxx. 
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
             <div class="processSectionContent">
@@ -325,6 +335,7 @@
                 <img src="images/test image.JPG" class="img-fluid" alt="portrait of Jenny">
                 <div class="imageCaption">
                     A sample of the high fidelity prototypes.  
+                    <p>Click image to see full size.</p>
                 </div>
             </div>
         </div>
@@ -395,6 +406,9 @@
                     </div>
                 </div>
             </div>
+            <div class="imageCaption"> 
+                <p>Click image to see full size.</p>
+            </div>
             <div class="processSectionContent">
                 <h4 class="mt-5">Final Prototype</h4>
                 <p>Insert a gif of the prototype?</p>
@@ -435,7 +449,19 @@
     </div>
    </section>
 
-   
+   <div class="modal" id="viewImg" tabindex="-1" role="dialog">
+    <div class="modal-dialog mw-100">
+      <div class="modal-content">
+        <div class="closeButton">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <div id="imgViewer" style="overflow-x: scroll;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <footer>
         <div class="footerIconsContainer">
@@ -455,7 +481,18 @@
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        $('img').on('click', function(e) {
+            $('#imgViewer').html('').append( $(e.currentTarget).clone().removeClass('img-fluid processSectionContent'))
+            $('#viewImg').modal('show')
+        })
+
+        $('img').each(function(i,e) {
+            $(e).wrap('<div class="container-fluid"></div>')
+        })
+    </script>
 </body>
 </html>
